@@ -27,6 +27,5 @@
   "routingHandler": "apache",
   "projectType": "web",
   "targets": [],
-  "designFramework": "bootstrap4",
   "hostingType": "docker"
 }
