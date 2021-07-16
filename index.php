@@ -4,7 +4,7 @@
 <head>
     <base href="/">
     <!-- Required meta tags -->
-    <title>Wappler starter page</title>
+    <title>Patient Visit Assist</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
