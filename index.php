@@ -35,10 +35,8 @@
                 <div id="header-text" class="order-2 order-sm-2 order-md-1 col-12 col-sm-12 col-md-7 col-lg-6">
                     <h1 class="display-4">Patient Visit Assist</h1>
                     <p class="lead">Make your patient visits more effective and efficient!</p>
-                    <button type="button" class="btn btn-light">Learn More</button>
-
                 </div>
-                <div id="header-img" class="order-1 order-sm-1 order-md-2 col-12 col-sm-12 col-md-5 col-lg-6"> <img class="img-fluid" src="assets/patient-visit.gif" width="800" height="533"> </div>
+                <div id="header-img" class="order-1 order-sm-1 order-md-2 col-12 col-sm-12 col-md-5 col-lg-6"> <img class="img-fluid" src="assets/images/patient-visit.gif" width="800" height="533"> </div>
             </div>
         </div>
     </header>
