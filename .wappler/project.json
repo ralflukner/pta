@@ -21,10 +21,12 @@
     }
   ],
   "projectServerModel": "PHP",
-  "activeTarget": "Local",
+  "activeTarget": "Development",
   "useRouting": true,
   "addBase": true,
   "routingHandler": "apache",
   "projectType": "web",
-  "targets": []
+  "targets": [],
+  "designFramework": "bootstrap4",
+  "hostingType": "docker"
 }
