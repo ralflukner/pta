@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="ac:route" content="/login">
     <base href="/">
     <script src="dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
