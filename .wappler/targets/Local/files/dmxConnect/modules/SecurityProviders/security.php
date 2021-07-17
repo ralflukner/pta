@@ -14,7 +14,11 @@ $exports = <<<'JSON'
       "admin": [
         "lukner"
       ]
-    }
+    },
+    "domain": "newphoe.com",
+    "path": "/pta",
+    "secure": true,
+    "sameSite": "Strict"
   },
   "meta": [
     {
