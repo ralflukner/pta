@@ -23,11 +23,33 @@
 
 <body is="dmx-app" id="login">
     <?php
-      
-      date_default_timezone_set('America/Chicago');
-      echo "Current Date and Time = " 
-             . date("l F jS, Y g:ia", time ());
-    ?>
+
+// Display the current date and time
+date_default_timezone_set('America/Chicago');
+echo "Current Date and Time = "
+    . date("l F jS, Y g:ia", time());
+
+// Upload a file
+echo <<<_END
+            <html><head><title>PHP Form Upload</title></head><body>
+            <form method='post' action='login.php' enctype='multipart/form-data'>
+            Select File: <input type='file' name='filename' size='10'>
+            <input type='submit' value='Upload'>
+            </form>
+        _END;
+
+if ($_FILES) {
+    echo "filename = " . $_FILES['filename']['name'];
+    $name = $_FILES['filename']['name'];
+    move_uploaded_file($_FILES['filename']['tmp_name'], $name);
+    echo "Uploaded image '$name'<br><img src='$name'>";
+}
+
+//echo "<script src="bootstrap/4/js/popper.min.js"></script>
+//<script src="bootstrap/4/js/bootstrap.min.js"></script>
+?>
+
+
     <header>
         <h1>User Login - Lukner Medical Clinic</h1>
         <main>
