@@ -2,5 +2,9 @@
   "select-patient.php": {
     "layoutPage": "",
     "description": ""
+  },
+  "login.php": {
+    "layoutPage": "",
+    "description": "Login Page"
   }
 }
