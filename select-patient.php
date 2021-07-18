@@ -1,3 +1,23 @@
+<?php
+require('dmxConnectLib/dmxConnect.php');
+
+$app = new \lib\App();
+
+$app->exec(<<<'JSON'
+{
+	"steps": [
+		
+		"SecurityProviders/security",
+		{
+			"module": "auth",
+			"action": "restrict",
+			"options": {"loginUrl":"login.php","forbiddenUrl":"login.php","provider":"security"}
+		}
+	]
+}
+JSON
+, TRUE);
+?>
 <!doctype html>
 <html>
 

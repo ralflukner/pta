@@ -26,6 +26,17 @@
   "addBase": true,
   "routingHandler": "apache",
   "projectType": "web",
-  "targets": [],
+  "targets": [
+    {
+      "access": "sftp",
+      "nopassive": true,
+      "name": "bitnami",
+      "remoteURL": "http://ec2-18-188-125-130.us-east-2.compute.amazonaws.com/",
+      "ftpServer": "ec2-18-188-125-130.us-east-2.compute.amazonaws.com",
+      "ftpRemoteFolder": "/home/bitnami/htdocs",
+      "ftpUser": "bitnami",
+      "keyFile": "~/OpenEMRKeyPair-6-0-0-2021-02-17.pem"
+    }
+  ],
   "hostingType": "docker"
 }
