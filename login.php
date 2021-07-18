@@ -23,14 +23,34 @@
 
 <body is="dmx-app" id="login">
     <?php
+      // Learning to work with arrays
       $paper['copier'] = "Copier & Multipurpose";
       $paper['inkjet'] = "Inkjet Printer";
       $paper['laser'] = "Laser Printer";
       $paper['photo'] = "Photographic Paper";
 
+      // Traverse an array
 	  while (list($paper_item, $paper_descr) = each($paper)) {
 	  	echo "$paper_item: $paper_descr<br>";
 	  }
+
+      // create a text file
+      // $fh = fopen("testfile.txt, 'w'") or die("Failed to create file");
+
+      // $text = "";
+
+      // Traverse an array and store the result in the textfile
+      reset($paper);
+      while (list($paper_item, $paper_descr) = each($paper)) {
+        $print_string = "$paper_item: $paper_descr<br>";
+        printf("%s",$print_string);
+        //fwrite($fh, sprintf("%s", "$paper_item: $paper_descr<br>"));
+      }
+      
+      // close the text file
+      // fclose($fh);
+      // echo "File 'testfile.txt' written successfully."
+
     ?>
     <header>
         <h1>User Login - Lukner Medical Clinic</h1>
