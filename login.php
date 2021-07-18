@@ -6,7 +6,7 @@
     <base href="/">
     <script src="dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
-    <title>Untitled Document</title>
+    <title>Patient Visit Assist Login</title>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
@@ -22,6 +22,16 @@
 </head>
 
 <body is="dmx-app" id="login">
+    <?php
+      $paper['copier'] = "Copier & Multipurpose";
+      $paper['inkjet'] = "Inkjet Printer";
+      $paper['laser'] = "Laser Printer";
+      $paper['photo'] = "Photographic Paper";
+
+	  while (list($paper_item, $paper_descr) = each($paper)) {
+	  	echo "$paper_item: $paper_descr<br>";
+	  }
+    ?>
     <header>
         <h1>User Login - Lukner Medical Clinic</h1>
         <main>
@@ -47,7 +57,7 @@
             </form>
         </main>
         <footer>
-            <h1>Patient Assist Web App</h1>
+            <h1>Patient Visit Assist Web App</h1>
         </footer>
     </header>
     <script src="bootstrap/4/js/popper.min.js"></script>
